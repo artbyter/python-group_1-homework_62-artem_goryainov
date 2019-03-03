@@ -4,6 +4,10 @@ from api_v1 import views
 
 router = routers.DefaultRouter()
 router.register(r'movies', views.MovieViewSet)
+router.register(r'categories', views.CategoryViewSet)
+router.register(r'halls', views.HallViewSet)
+router.register(r'seats', views.SeatViewSet)
+router.register(r'shows', views.ShowViewSet)
 
 
 app_name = 'api_v1'
