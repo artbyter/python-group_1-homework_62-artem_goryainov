@@ -1,0 +1,126 @@
+[
+{
+  "model": "webapp.category",
+  "pk": 1,
+  "fields": {
+    "name": "Action",
+    "description": "Action is Action"
+  }
+},
+{
+  "model": "webapp.category",
+  "pk": 2,
+  "fields": {
+    "name": "Horror",
+    "description": "Horror is Horror"
+  }
+},
+{
+  "model": "webapp.movie",
+  "pk": 1,
+  "fields": {
+    "name": "Iron Man",
+    "description": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+    "poster": "posters/ironman.jpg",
+    "release_date": "2008-05-02",
+    "finish_date": null,
+    "is_deleted": true,
+    "category": []
+  }
+},
+{
+  "model": "webapp.movie",
+  "pk": 2,
+  "fields": {
+    "name": "Iron Man 2",
+    "description": "With the world now aware of his identity as Iron Man, Tony Stark must contend with both his declining health and a vengeful mad man with ties to his father's legacy.",
+    "poster": "posters/ironman2.jpg",
+    "release_date": "2010-05-07",
+    "finish_date": null,
+    "is_deleted": false,
+    "category": []
+  }
+},
+{
+  "model": "webapp.movie",
+  "pk": 3,
+  "fields": {
+    "name": "Iron Man 3",
+    "description": "When Tony Stark's world is torn apart by a formidable terrorist called the Mandarin, he starts an odyssey of rebuilding and retribution.",
+    "poster": "posters/ironman3.jpg",
+    "release_date": "2013-05-03",
+    "finish_date": null,
+    "is_deleted": false,
+    "category": []
+  }
+},
+{
+  "model": "webapp.movie",
+  "pk": 4,
+  "fields": {
+    "name": "Evil dead",
+    "description": "Five friends travel to a cabin in the woods, where they unknowingly release flesh-possessing demons.",
+    "poster": "posters/evildead.jpg",
+    "release_date": "1983-04-15",
+    "finish_date": null,
+    "is_deleted": false,
+    "category": []
+  }
+},
+{
+  "model": "webapp.hall",
+  "pk": 1,
+  "fields": {
+    "name": "Hall 1",
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.hall",
+  "pk": 2,
+  "fields": {
+    "name": "Hall 2",
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.seat",
+  "pk": 1,
+  "fields": {
+    "hall": 1,
+    "row_number": 1,
+    "seat_number": 4,
+    "is_deleted": true
+  }
+},
+{
+  "model": "webapp.show",
+  "pk": 1,
+  "fields": {
+    "movie": 3,
+    "hall": 1,
+    "start_time": "2019-03-06T00:00:00Z",
+    "end_time": "2019-03-06T01:25:00Z",
+    "price": "424.00",
+    "is_deleted": false
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$120000$3Rc5HPQoHyYt$jL1dKMRoR9UPoGJyDbCnyQ6gpClrVsHRddpR44AqT3k=",
+    "last_login": "2019-02-28T14:00:15.794Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2019-02-28T13:36:49.222Z",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
