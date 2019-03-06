@@ -72,6 +72,7 @@
   "pk": 1,
   "fields": {
     "name": "Hall 1",
+    "description": null,
     "is_deleted": false
   }
 },
@@ -80,6 +81,7 @@
   "pk": 2,
   "fields": {
     "name": "Hall 2",
+    "description": null,
     "is_deleted": false
   }
 },
@@ -91,6 +93,26 @@
     "row_number": 1,
     "seat_number": 4,
     "is_deleted": true
+  }
+},
+{
+  "model": "webapp.seat",
+  "pk": 2,
+  "fields": {
+    "hall": 1,
+    "row_number": 45,
+    "seat_number": 23,
+    "is_deleted": false
+  }
+},
+{
+  "model": "webapp.seat",
+  "pk": 3,
+  "fields": {
+    "hall": 1,
+    "row_number": 1,
+    "seat_number": 2,
+    "is_deleted": false
   }
 },
 {
@@ -106,11 +128,69 @@
   }
 },
 {
+  "model": "webapp.discount",
+  "pk": 1,
+  "fields": {
+    "name": "Discount 1",
+    "discount": "10.00",
+    "start_time": null,
+    "end_time": null
+  }
+},
+{
+  "model": "webapp.discount",
+  "pk": 2,
+  "fields": {
+    "name": "Discount 2",
+    "discount": "15.00",
+    "start_time": "2019-03-06T12:26:18Z",
+    "end_time": "2019-03-08T12:26:23Z"
+  }
+},
+{
+  "model": "webapp.ticket",
+  "pk": 1,
+  "fields": {
+    "show": 1,
+    "seat": 1,
+    "discount": 2
+  }
+},
+{
+  "model": "webapp.reservation",
+  "pk": 1,
+  "fields": {
+    "uid": "155187575122052",
+    "show": 1,
+    "status": "CR",
+    "create_date": "2019-03-06T12:36:14.375Z",
+    "update_date": "2019-03-06T12:43:29.870Z",
+    "seat": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "webapp.reservation",
+  "pk": 2,
+  "fields": {
+    "uid": "1551876209929615",
+    "show": 1,
+    "status": "CR",
+    "create_date": "2019-03-06T12:43:53.102Z",
+    "update_date": "2019-03-06T12:43:53.102Z",
+    "seat": [
+      1
+    ]
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$120000$3Rc5HPQoHyYt$jL1dKMRoR9UPoGJyDbCnyQ6gpClrVsHRddpR44AqT3k=",
-    "last_login": "2019-02-28T14:00:15.794Z",
+    "last_login": "2019-03-06T12:25:42.756Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
