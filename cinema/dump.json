@@ -25,7 +25,7 @@
     "release_date": "2008-05-02",
     "finish_date": null,
     "is_deleted": true,
-    "category": []
+    "categories": []
   }
 },
 {
@@ -38,7 +38,7 @@
     "release_date": "2010-05-07",
     "finish_date": null,
     "is_deleted": false,
-    "category": []
+    "categories": []
   }
 },
 {
@@ -51,7 +51,7 @@
     "release_date": "2013-05-03",
     "finish_date": null,
     "is_deleted": false,
-    "category": []
+    "categories": []
   }
 },
 {
@@ -64,7 +64,7 @@
     "release_date": "1983-04-15",
     "finish_date": null,
     "is_deleted": false,
-    "category": []
+    "categories": []
   }
 },
 {
